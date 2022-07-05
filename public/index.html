@@ -1,0 +1,42 @@
+<html>
+
+<script>
+    var strStartime = document.getElementById("txtStartTime")
+    var strEndTime = document.getElementById("txtEndTime")
+
+    var StartTime = new Date().setHours() 
+</script>
+<body>
+    <center><h1>Schedule meeting</h1></center>
+        <form action="/postData" method = "POST">
+    <table>
+        <tr>
+            <td><label>Enter Date:</label></td>
+            <td>
+                <input type="date" name="dateMeet" placeholder="Enter Date">
+            </td>
+        </tr>
+        <tr>
+            <td><label>Enter Start Time:</label></td>
+            <td>
+                <input type="time" id ="txtStartTime" name="startTime" placeholder="Enter Start Time">
+                <small>Office hours are from 9:00 am to 8:00 pm</small>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Enter End Time:</label></td>
+            <td>
+                <input type="time" id="txtEndTime"name="endTime" placeholder="Enter End Time">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type ="submit" name="submit" value="Submit">
+            </td>
+        </tr>
+        
+    </table>
+   
+    </form>
+</body>
+</html>
