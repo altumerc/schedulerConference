@@ -55,7 +55,7 @@ app
                 var s = element.start_time
                 var e = element.end_time
                 var dt = {}
-                 dt.title = 'Meeting'
+                 dt.title = 'Meeting Already Booked'
                  dt.start = newDate.slice(0,11).concat(s)
                  dt.end = newDate.slice(0,11).concat(e)
                  dt.display = 'background'
